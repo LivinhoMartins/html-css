@@ -1,0 +1,24 @@
+
+/*Cores Representação por nomes*/
+
+
+h1{
+    background-color: yellow;
+}
+
+/*Cores hexadecimais
+(0 1 2 3 4 5 6 7 8 9 A B C D E F)
+Formadas por 16 algorítimos*/
+h2{
+    background-color: #0000ff;
+    color:#fefefe;
+}
+
+/*Cores em RGB decimal*/
+p{
+    color: rgb(0, 0, 0);
+}
+
+a{
+    color: hsl(224, 100%, 53%)
+}

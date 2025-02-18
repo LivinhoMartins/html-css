@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body{
+    background-color: #D8FFDB;
+}
+
+/*Em HTML é ID = em CSS é (#) (Só pode em 1 elemento)*/
+/*Em HTML é Class = em CSS é (.) (Pode em vários elementos) */
+
+h1#principal{
+    text-align: center;
+    background-color:#023535;
+    color: #f3f3f3;
+}
+
+h1{
+    color: #023535;
+}
+
+h2{
+    color:#015958;
+}
+
+p{
+    color:#008F8C
+}
+
+.basico{
+    background-color: #023535;
+    color: aliceblue;
+}
+
+.pupilo{
+    color: aliceblue;
+}
