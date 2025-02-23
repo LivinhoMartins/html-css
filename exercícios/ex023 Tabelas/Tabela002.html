@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes
+
+    </title>
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+            
+        }
+        div#contaier{
+            overflow-x: auto;
+        }
+        caption{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 1.5em;
+            padding-bottom:10px;
+        }
+        tbody>tr:nth-child(2n-1){
+            background-color: lightblue ;
+        }
+        tbody>tr:nth-child(2n){
+            background-color: lightpink ;
+        }
+        td,th{
+            border: 1px solid black;
+        }
+        td.num{
+            text-align: right;
+        }
+        thead{
+            background-color: grey;
+            color: white;
+        }
+        thead>tr>th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+        tfoot{
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--Anatomia para tabelas grandes:
+    TABLE
+    CAPTION = NOME DA TAB
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+            -->
+
+    <div id="container">
+        <table>
+            <caption>População de cada estado brasileiro.</caption>
+            <thead>
+                <tr>
+                    <th>Estado</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">46.900.000</td>
+                    </td>
+                </tr>
+                <tr class="par">
+                    <td>Minas G.</td>
+                    <td class="num">21.100.000</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17.000.000</td>
+                </tr>
+                <tr class="par">
+                    <td>Paraná</td>
+                    <td class="num">8.000.000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total de habitantes</th>
+                    <td class="num"><strong>93.000.000</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, dolorem quod velit praesentium voluptate repudiandae deleniti dolor cum placeat dolorum tenetur ab laboriosam, consectetur sit minima. Doloribus illo ipsa nisi
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vitae, consequatur dolorem assumenda impedit nesciunt fuga inventore eveniet at ducimus maxime tempore delectus praesentium sequi magnam ex harum iste officia.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil eos hic blanditiis odio? Magnam, quos nesciunt omnis accusantium atque iste, non maiores voluptatum exercitationem quod perspiciatis aut inventore assumenda ipsam!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque repudiandae labore fugiat dignissimos illo corrupti, maxime soluta dolorum, tempora ipsum iure consectetur quas sit ratione doloremque, delectus dolor illum distinctio.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quisquam fuga dignissimos aut facere labore tempora eaque praesentium, deleniti expedita, vel, iure mollitia id saepe sed quis unde quas natus?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate error dolore recusandae quisquam facilis, repudiandae blanditiis reiciendis nemo explicabo ipsam minima. Suscipit sit cum nesciunt quidem magnam porro dolor ratione?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem necessitatibus maiores reiciendis rem, nulla facilis pariatur nihil ex aliquam nostrum cumque facere vitae ad reprehenderit rerum mollitia sed maxime accusantium.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex iste culpa maiores veniam omnis quasi asperiores, reprehenderit debitis iure distinctio? Nam deleniti, sed saepe consectetur optio hic dolorum quia incidunt!
+    </p>
+</body>
+</html>
