@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colgroup
+    </title>
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+
+    <style>
+       body{
+        font-family:cursive;
+       }
+       div#container{
+        height: 15vh;
+        overflow-y: auto;
+       }
+       table{
+        border-collapse: collapse;
+        width: 300px;
+        position: relative;
+       }
+       td,th{
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+       }
+       thead>tr>th{
+        position: sticky;
+       }
+       
+       .col1{
+        background-color: lightcoral;
+       }
+       .col2e3{
+        background-color: lightcyan;
+       }
+       .col4{
+        background-color: lightseagreen;
+       }
+       
+    </style>
+</head>
+<body>
+    <h1>Grupos de colunas</h1>
+    <!--Anatomia para tabelas grandes:
+    TABLE
+    CAPTION = NOME DA TAB
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+            -->
+<div id="container">
+    <table>
+        <colgroup>
+        <col class="col1">
+        <col class="col2e3" span="2">
+        <col class="col4">
+        </colgroup>
+       <caption>Pessoas:</caption>
+       <thead>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th class="lukinhas">4</th>
+            </tr>
+       </thead>
+       <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+    
+       </tbody>
+    </table>
+</div>
+    
+    
+</body>
+</html>
