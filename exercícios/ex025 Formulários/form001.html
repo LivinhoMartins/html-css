@@ -8,18 +8,33 @@
 
     <style>
         *{
+            margin: 0px;
+            padding: 0px;
             font-family: Arial, Helvetica, sans-serif;
         }
+        h1{
+            background-color: blue;
+            margin: 0px;
+            padding: 10px;
+            color: white;
+        }
+        p{
+            margin: 10px;
+        }
+        .botão{
+            padding: 5px;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Meu primeiro formulário</h1>
+    <h1>Facebook.com</h1>
     <form action="cadastro.php" autocomplete="off" method="post">
         <p><label for="inome">Email:</label>
             <input type="text" name="nome" id="inome"></p>
         <p><label for="isobrenome">Senha:</label>
             <input type="text" name="sobrenome" id="isobrenome"></p>
-        <p><input type="submit" value="Enviar"></p>
+        <p><input type="submit" value="Enviar" class="botão"></p>
 
     </form>
 </body>
