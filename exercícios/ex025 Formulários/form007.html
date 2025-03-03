@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Exemplo de formulários:</h1>
+    <form action="#" method="get" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest" required>
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Regiões Perigosas">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Regiões Ricas">
+                    <option value="SP">Paraná</option>
+                    <option value="RJ">Santa Catarina</option>
+                    <option value="MG">Mato Grosso do Sul</option>
+                </optgroup>
+            </select>
+        </p>
+             
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof" required>
+            <datalist id="lstprof">
+                <option>Professor</option>
+                <option>Médico</option>
+                <option>Advogado</option>
+            </datalist>
+        </p>
+        
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" placeholder="Escreva algo aqui:" required></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

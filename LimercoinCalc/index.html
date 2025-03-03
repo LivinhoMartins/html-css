@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>LimerCoin Calculadora:</h1>
+    <form action="#" method="get" autocomplete="on">
+    
+        <p>
+            <label for="in1">Seu poder em PH/s:</label>
+            <input type="number" name="n1" id="in1" required oninput="isoma.innerHTML = Number(in1.value) * Number(in2.value) * Number('144') / Number(in3.value)">
+        </p>
+        <p>
+            <label for="in2">Recompensa por bloco:</label>
+            <input type="number" name="n2" id="in2" required value="1.35" oninput="isoma.innerHTML = Number(in1.value) * Number(in2.value) * Number('144') / Number(in3.value)">
+        </p>
+        <p>
+            <label for="in2">Poder da rede em PH/s:</label>
+            <input type="number" name="n3" id="in3" required oninput="isoma.innerHTML = Number(in1.value) * Number(in2.value) * Number('144') / Number(in3.value)">
+        </p>
+        
+        
+        <p><label for="ires">Resultado: </label>
+        <output name="soma" id="isoma" >0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
