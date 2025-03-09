@@ -4,10 +4,20 @@
 
 }
 
-@media screen and (min-width: 400px) and (max-width: 800px)
+@media screen and (min-width: 768px)
 /*Para tablets*/ {
-    body{
-        background-color: yellow;
+    i#burguer{
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+    menu > ul > li{
+        display: inline-block;
+    }
+
+    main{
+        width: 740px;
     }
     
 }
