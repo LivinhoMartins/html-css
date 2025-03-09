@@ -1,0 +1,12 @@
+@charset "UFT-8";
+
+@media screen and (orientation: portrait) {
+    body{
+        
+            }
+}
+
+@media screen and (orientation: landscape) {
+    body{
+     }
+}
