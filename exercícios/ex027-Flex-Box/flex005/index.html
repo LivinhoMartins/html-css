@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="shortcut icon" href="../favicon_io/favicon.ico" type="image/x-icon">
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: lightcoral;
+        }
+        main{
+            background-color: lightblue;
+            height: 90vh;
+            width: 90vw;
+
+            display: flex;
+            flex-flow: row wrap;
+
+            
+            justify-content: center;
+            align-items: center;
+            align-content: space-around;
+            
+        }
+        section{
+            background-color: antiquewhite;
+            height: 200px;
+            width: 200px;
+;
+         
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Olá, mundo</h1>
+        </section>
+        <section>
+            <h1>Olá, mundo</h1>
+        </section>
+    </main>
+</body>
+</html>

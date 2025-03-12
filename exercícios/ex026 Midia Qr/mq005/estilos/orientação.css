@@ -2,11 +2,13 @@
 
 @media screen and (orientation: portrait) {
     body{
+        color: black;
         
             }
 }
 
 @media screen and (orientation: landscape) {
     body{
+        color: black;
      }
 }
