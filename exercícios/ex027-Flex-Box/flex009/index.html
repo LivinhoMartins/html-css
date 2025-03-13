@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="shortcut icon" href="../favicon_io/favicon.ico" type="image/x-icon">
+
+    <style>
+        .conteiner{
+         
+            background-color: lightsalmon;
+            
+            display: flex;
+            flex-flow: row nowrap;
+            
+            
+        }
+
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: auto;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">Outro conteúdo</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">Mais um conteúdo grande</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">Agora um absolutamente maior que todos os outros</div>
+        
+    </div>
+</body>
+</html>
