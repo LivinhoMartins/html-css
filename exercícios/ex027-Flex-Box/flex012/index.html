@@ -13,18 +13,35 @@
             
             display: flex;
             flex-flow: row nowrap;
-            justify-content: flex-start;
-            align-items: center;
-            align-content: center ;
+            
         }
 
         div.item{
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-            flex-basis: auto;
             
+            /*flex-basis: 30px;
+            flex-grow: 1;
+            flex-shrink: 1;*/
+            flex: 1 1 30px;
+
+
             
+        }
+        #i1{
+            /*flex-grow: 2;
+            flex-shrink: 0;*/
+            flex: 2 0;
+        }
+        #i2{
+            /*flex-grow: 0;
+            flex-shrink: 0;*/
+            flex: 0.3 0 auto; 
+        }
+        #i3{
+            flex-grow: 1;
+            flex-shrink: 3;
         }
 
     </style>
@@ -33,12 +50,9 @@
 <body>
     <div class="conteiner">
         <div class="item" id="i1">A</div>
-        <div class="item" id="i2">Outro conteúdo</div>
+        <div class="item" id="i2">b</div>
         <div class="item" id="i3">C</div>
-        <div class="item" id="i4">D</div>
-        <div class="item" id="i5">Mais um conteúdo grande</div>
-        <div class="item" id="i6">F</div>
-        <div class="item" id="i7">Agora um absolutamente maior que todos os outros</div>
+        
         
     </div>
 </body>

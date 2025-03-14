@@ -10,21 +10,23 @@
         .conteiner{
          
             background-color: lightsalmon;
-            
+            width: 150px;
             display: flex;
-            flex-flow: row nowrap;
-            justify-content: flex-start;
-            align-items: center;
-            align-content: center ;
+            flex-flow: row wrap;
+            
         }
 
         div.item{
             background-color: lightblue;
             border: 1px solid black;
             text-align: center;
-            flex-basis: auto;
+            flex-basis: 50px;
+            flex-grow: 1;
+            flex-shrink: 1;
             
-            
+        }
+        #i2{
+            flex-grow: 0;
         }
 
     </style>
@@ -33,12 +35,9 @@
 <body>
     <div class="conteiner">
         <div class="item" id="i1">A</div>
-        <div class="item" id="i2">Outro conteúdo</div>
+        <div class="item" id="i2">b</div>
         <div class="item" id="i3">C</div>
-        <div class="item" id="i4">D</div>
-        <div class="item" id="i5">Mais um conteúdo grande</div>
-        <div class="item" id="i6">F</div>
-        <div class="item" id="i7">Agora um absolutamente maior que todos os outros</div>
+        
         
     </div>
 </body>
